@@ -9,6 +9,7 @@
     "build": "sucrase ./src -d ./dist --transforms imports",
     "pretest": "set NODE_ENV=test && yarn sequelize db:migrate",
     "test": "jest",
+    "lint": "eslint src/**",
     "posttest": "set NODE_ENV=test  && yarn sequelize db:migrate:undo:all"
   },
   "dependencies": {
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@sucrase/jest-plugin": "^2.0.0",
     "@types/jest": "^25.2.1",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.2.0",
     "eslint-config-prettier": "^6.0.0",
@@ -38,5 +40,10 @@
     "sqlite3": "^4.1.1",
     "sucrase": "^3.10.1",
     "supertest": "^4.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
