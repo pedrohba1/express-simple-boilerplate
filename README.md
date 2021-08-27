@@ -2,7 +2,6 @@
 
 - [Sobre](#about)
 - [Setup](#getting_started)
-- [Pré-requisitos](#requisites)
 
 ## 🧐 Sobre <a name = "about"></a>
 
