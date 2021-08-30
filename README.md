@@ -1,21 +1,21 @@
-## 📝 Tabela de conteúdos
+## 📝 Content table
 
-- [Sobre](#about)
+- [About](#about)
 - [Setup](#getting_started)
 
-## 🧐 Sobre <a name = "about"></a>
+## 🧐 About <a name = "about"></a>
 
-Backend do UMCtech em nodeJS.
+NodeJS boiler plate. Comes with sequelize, jest, eslint, prettier and youch.
 
 ## 🏁 Setup <a name = "getting_started"></a>
 
-Para utilizar esse backend só é preciso criar um container com docker da seguinte maneira:
+To run this backend you simply need to create a docker container with the following commands:
 
 ```
-docker run --name umctech -e  POSTGRES_USER=admin -e POSTGRES_PASSWORD=admin -p 5433:5432 -d postgres -e POSTGRES_DB=umctech
+docker run --name umctech -e  POSTGRES_USER=admin -e POSTGRES_PASSWORD=admin -p 5433:5432 -d postgres -e POSTGRES_DB=boilerplate
 ```
 
-E em seguida realizar as migrations com `yar sequelize db:migrate`.
+After that, copy the contents of `.env.development` into `.env` and run the migrations with: `yarn sequelize db:migrate`.
 
 
 
