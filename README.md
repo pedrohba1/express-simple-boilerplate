@@ -6,6 +6,7 @@
 ## 🧐 About <a name = "about"></a>
 
 NodeJS boiler plate. Comes with sequelize, jest, eslint, prettier and youch.
+**This boilerplate uses node version 12.**
 
 ## 🏁 Setup <a name = "getting_started"></a>
 

@@ -1,5 +1,9 @@
 const dotenv = require('dotenv');
 
-dotenv.config({
-    path: process.env.NODE_ENV === 'dev' ? '.env' : '.env.test',
-});
+const result = dotenv.config();
+
+if (result.error) {
+    throw result.error;
+}
+
+console.log(result.parsed);
